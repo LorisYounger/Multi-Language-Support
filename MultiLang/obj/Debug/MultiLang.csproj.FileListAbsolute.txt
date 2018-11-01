@@ -1,0 +1,10 @@
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\bin\Debug\MultiLang.dll
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\bin\Debug\MultiLang.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\bin\Debug\LinePutScript.dll
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\bin\Debug\LinePutScript.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\bin\Debug\LinePutScript.xml
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\obj\Debug\MultiLang.csprojAssemblyReference.cache
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\obj\Debug\MultiLang.csproj.CoreCompileInputs.cache
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\obj\Debug\MultiLang.csproj.CopyComplete
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\obj\Debug\MultiLang.dll
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\MultiLang\obj\Debug\MultiLang.pdb

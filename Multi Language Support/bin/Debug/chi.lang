@@ -1,0 +1,12 @@
+﻿MLS#Multi_Language_Support:|lang#Chinese (中文):|
+form#FrmMain:|多语言支持工具
+menu#languageToolStripMenuItem:|语言
+frm#label1:|选择一个 *.resx 文件
+frm#buttonChooseFile:|选择文件
+.ToolTip#buttonChooseFile.ToolTip:|你需要先本地化(Localizable)WinForm
+
+frm#label2:|获取更多    .Text|
+frm#tabPage1:|Resx->标准
+frm#button2:|<- 返回
+frm#button1:|变容易 ->
+frm#tabPage2:|简单翻译

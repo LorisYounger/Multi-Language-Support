@@ -1,0 +1,16 @@
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\Multi Language Support.exe.config
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\Multi Language Support.exe
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\Multi Language Support.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.csprojAssemblyReference.cache
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi_Language_Support.FrmMain.resources
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi_Language_Support.Properties.Resources.resources
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.csproj.GenerateResource.cache
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.csproj.CoreCompileInputs.cache
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.exe
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\MultiLang.dll
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\LinePutScript.dll
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\MultiLang.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\LinePutScript.pdb
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\bin\Debug\LinePutScript.xml
+C:\Users\Zou Jin\Documents\Visual Studio 2017\Projects\Multi Language Support\Multi Language Support\obj\Debug\Multi Language Support.csproj.CopyComplete
