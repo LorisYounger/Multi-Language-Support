@@ -32,7 +32,7 @@ namespace MultiLang
         /// <summary>
         /// 生成一个语言 针对
         /// </summary>
-        /// <param name="langFile">读取的语言文件内容</param>
+        /// <param name="lineforForm">读取的语言文件内容</param>
         public LangForm(List<Line> lineforForm)//form#frmlang
         {
             LineforForm = lineforForm;
@@ -42,7 +42,7 @@ namespace MultiLang
             LanginText = LineforForm.FindAll(x => x.Name == "txt");
         }
         /// <summary>
-        /// 翻译，翻译整个WinForm
+        /// 翻译,翻译整个WinForm
         /// </summary>
         /// <param name="form">WinForm</param>
         /// <returns></returns>
@@ -65,7 +65,7 @@ namespace MultiLang
             return form;
         }
         /// <summary>
-        /// 翻译，由文本进行翻译
+        /// 翻译,由文本进行翻译
         /// </summary>
         /// <param name="text">文本</param>
         /// <returns></returns>
@@ -86,13 +86,19 @@ namespace MultiLang
             return LineforForm.FindAll(x => x.Name == GroupName);
         }
     }
-
+    /// <summary>
+    /// 多语言支持类
+    /// </summary>
     public class Lang
     {
         /// <summary>
         /// 指示当前语言
         /// </summary>
         public string Language;
+        /// <summary>
+        /// Windows API 中定义的由三个字母构成的语言代码
+        /// </summary>
+        public string ThreeLetterWindowsLanguageName;
         /// <summary>
         /// 是否是默认的主语言
         /// </summary>
@@ -101,21 +107,29 @@ namespace MultiLang
         /// 语言文件读取信息
         /// </summary>
         public LpsDocument LangFile;
+        /// <summary>
+        /// 多个LangForms,对应不同的类
+        /// </summary>
         public List<LangForm> LangForms = new List<LangForm>();
         /// <summary>
         /// 纯文本中的文本替换/或者数据组(集体)
         /// </summary>
         public List<Line> LanginText = new List<Line>();
-
+        /// <summary>
+        /// 从文件生成语言翻译
+        /// </summary>
+        /// <param name="langFile"></param>
+        /// <param name="SoftwareName"></param>
         public Lang(string langFile, string SoftwareName)
         {
             LangFile = new LpsDocument(langFile);
-            if (LangFile.Read().Name != "MLS" || LangFile.Read().Find("lang") == null || LangFile.Read().Info != SoftwareName)
+            if (LangFile.Read().Name != "MLS" || LangFile.Read().Find("lang") == null || LangFile.Read().Find("WIN") == null || LangFile.Read().Info != SoftwareName)
             {
                 Language = "ERROR:FalseLangFile";
                 return;
             }
             Language = LangFile.Read().Find("lang").Info;
+            ThreeLetterWindowsLanguageName = LangFile.Read().Find("WIN").Info;
             Default = LangFile.ReadNext().Find("def") != null;
             bool HaveForm = false;//如果有form,就继续读
             //加载全局文本
@@ -150,38 +164,77 @@ namespace MultiLang
                 LangForms.Add(new LangForm(lineforForm));
             }
         }
-
         /// <summary>
-        /// 翻译，翻译整个WinForm
+        /// 生成一个空的语言文件,对应Null
         /// </summary>
-        /// <param name="form">WinForm</param>
-        /// <returns>返回翻译过后的form</returns>
-        public Form Translate(Form form)
+        public Lang()
         {
-            LangForm tmp = LangForms.Find(x => x.Form == form.Name);
-            if (tmp != null)
-                return tmp.Translate(form);
-            return form;
+            Language = "null";
+            ThreeLetterWindowsLanguageName = "NUL";
         }
         /// <summary>
-        /// 翻译，由文本进行翻译
+        /// 翻译,翻译整个WinForm
         /// </summary>
-        /// <param name="text">文本</param>
-        /// <returns>返回翻译过后的文本，或者原值</returns>
-        public string Translate(string text, Form form)
+        /// <param name="form">WinForm</param>
+        public void Translate(Form form)
         {
+            if (Language == "null")//如果为语言为null,直接退回原文本
+                return;
+            LangForm tmp = LangForms.Find(x => x.Form == form.Name);
+            if (tmp != null)
+                tmp.Translate(form);
+        }
+        /// <summary>
+        /// 翻译,获得对应Form的指定文本
+        /// </summary>
+        /// <param name="name">指定名称</param>
+        /// <param name="form">WinForm</param>
+        /// <returns>返回翻译过后的文本,或者原值</returns>
+        public string Translate(Form form, string name)
+        {
+            if (Language == "null")//如果为语言为null,直接退回原文本
+                return name;
             LangForm tmp = LangForms.Find(x => x.Form == form.Name);//先在Form中找
             if (tmp != null)
             {
-                string stmp = tmp.Translate(text);
-                if (stmp != text)
+                string stmp = tmp.Translate(name);
+                if (stmp != name)
                     return stmp;
             }
-            //如果没有，就在本地找
-            Line ltmp = LanginText.Find(x => x.Info == text);
+            //如果没有,就在本地找
+            Line ltmp = LanginText.Find(x => x.Info == name);
             if (ltmp != null)
                 return ltmp.Text;
-            return text;
+            return name;
+        }
+        /// <summary>
+        /// 翻译 查找指定名称,退回翻译后的文本
+        /// </summary>
+        /// <param name="name">翻译名称</param>
+        /// <returns></returns>
+        public string Translate(string name)
+        {
+            if (Language == "null")//如果为语言为null,直接退回原文本
+                return name;
+            Line ltmp = LanginText.Find(x => x.Info == name);
+            if (ltmp != null)
+                return ltmp.Text;
+            return name;
+        }
+        /// <summary>
+        /// 翻译 查找指定名称,退回翻译后的文本
+        /// </summary>
+        /// <param name="name">翻译名称</param>
+        /// <param name="replace">替换[int]中的文本,按先后顺序</param>
+        /// <returns></returns>
+        public string Translate(string name, params string[] replace)
+        {
+            string tans = Translate(name);
+            for (int i = 0; i < replace.Length; i++)
+            {
+                tans = tans.Replace($"[{i}]", replace[i]);
+            }
+            return tans;
         }
         /// <summary>
         /// 获取相应的LangForm

@@ -1,0 +1,16 @@
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\Multi Language Support.exe.config
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\Multi Language Support.exe
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\Multi Language Support.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\MultiLang.dll
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\MultiLang.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\LinePutScript.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\LinePutScript.xml
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.csprojAssemblyReference.cache
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi_Language_Support.FrmMain.resources
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi_Language_Support.Properties.Resources.resources
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.csproj.GenerateResource.cache
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.csproj.CoreCompileInputs.cache
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.csproj.CopyComplete
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.exe
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\obj\Release\Multi Language Support.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\Multi Language Support\bin\Release\MultiLang.xml

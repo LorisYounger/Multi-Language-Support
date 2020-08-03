@@ -1,0 +1,10 @@
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\bin\Release\MultiLang.dll
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\bin\Release\MultiLang.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\bin\Release\LinePutScript.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\bin\Release\LinePutScript.xml
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\obj\Release\MultiLang.csproj.CoreCompileInputs.cache
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\obj\Release\MultiLang.csproj.CopyComplete
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\obj\Release\MultiLang.dll
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\obj\Release\MultiLang.pdb
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\bin\Release\MultiLang.xml
+C:\Users\ZOUJI\Documents\Visual Studio 2019\Projects\Multi Language Support\MultiLang\obj\Release\MultiLang.csprojAssemblyReference.cache
